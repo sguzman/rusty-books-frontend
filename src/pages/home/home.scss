@@ -1,16 +1,20 @@
 page-home {
   img.thumbnails {
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  ion-card {
-    padding: 20px;
-    width: 33%;
+  ion-card.card {
+    padding: 10px;
+    width: 600px;
+    margin: auto;
   }
 
   .categories {
-    display: inline;
+    display: inline-block;
+    list-style-type: none;
   }
 
   .book-title {
