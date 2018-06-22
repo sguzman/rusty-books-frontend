@@ -1,4 +1,20 @@
 page-home {
+  span.page-size-text {
+    float: left;
+  }
+
+  span.page-idx-text {
+    float: right;
+  }
+
+  button.prev-button {
+    float: left;
+  }
+
+  button.next-button {
+    float: right;
+  }
+
   img.thumbnails {
     height: 400px;
     width: 300px;

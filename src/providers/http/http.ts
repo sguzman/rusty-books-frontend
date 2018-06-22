@@ -7,8 +7,12 @@ export class HttpProvider {
     console.log('Hello HttpProvider Provider');
   }
 
+  public get_observe(base: number, count: number) {
+    return this.http.get(`http://rusty-books.herokuapp.com/${base}/${count}`);
+  }
+
   public get(base: number, count: number, f: any): void {
-    this.http.get(`http://rusty-books.herokuapp.com/${base}/${count}`)
+    this.get_observe(base, count)
       .subscribe((data: any) => {
         f(data);
       })

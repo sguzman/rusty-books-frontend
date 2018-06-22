@@ -1,4 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <span class="page-size-text">Page Size: {{page_size}}</span>
+    <span class="page-idx-text">Page Index: {{page_idx}}</span>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
+  <button class="prev-button" color="primary" ion-button>Previous</button>
+  <button class="next-button" color="primary" ion-button>Next</button>
   <ion-list *ngFor="let item of items">
     <ion-item>
       <ion-card class="card">
