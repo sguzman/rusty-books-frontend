@@ -9,15 +9,28 @@ page-home {
   ion-card.card {
     padding: 10px;
     width: 600px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
   }
 
   .categories {
+    color: deepskyblue;
     display: inline-block;
     list-style-type: none;
+    float: left;
+    padding-left: 0;
+    padding-right: 15px;
   }
 
   .book-title {
     text-align: center;
+  }
+
+  .book-title:hover {
+    color: #488aff;
+  }
+
+  ion-card-title.book-title {
   }
 }
