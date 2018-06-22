@@ -1,16 +1,16 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
   <ion-list *ngFor="let item of items">
     <ion-item>
       <ion-card>
-        {{item}}
+        <ion-card-title class="book-title" color="primary">{{item.title}}</ion-card-title>
+        <ion-card-header>
+          <img class="thumbnails" src="{{item.img}}"/>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list class="categories" *ngFor="let cat of item.categories">
+            <ion-item>{{cat}}</ion-item>
+          </ion-list>
+        </ion-card-content>
       </ion-card>
     </ion-item>
   </ion-list>

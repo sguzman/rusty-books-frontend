@@ -8,7 +8,7 @@ export class HttpProvider {
   }
 
   public get(base: number, count: number, f: any): void {
-    this.http.get(`http://rusty-books.herokuapps.com/${base}/${count}`)
+    this.http.get(`http://rusty-books.herokuapp.com/${base}/${count}`)
       .subscribe((data: any) => {
         f(data);
       })

@@ -1,3 +1,19 @@
 page-home {
+  img.thumbnails {
+    height: 300px;
+    width: 200px;
+  }
 
+  ion-card {
+    padding: 20px;
+    width: 33%;
+  }
+
+  .categories {
+    display: inline;
+  }
+
+  .book-title {
+    text-align: center;
+  }
 }

@@ -15,7 +15,10 @@ export class HomePage {
   constructor(public http: HttpProvider) {
     this.http.get(this.page_idx, this.page_size, data => {
       console.log(data);
-    })
+      for (let i = this.page_idx; i < this.page_size; ++i) {
+        this.items[i] = data[i];
+      }
+    });
   }
 
 }
